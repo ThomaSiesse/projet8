@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: postgres-projet8
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: camille
+      POSTGRES_PASSWORD: motdepasse
+      POSTGRES_DB: projet8
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata_projet8:/var/lib/postgresql/data
+
+volumes:
+  pgdata_projet8:
