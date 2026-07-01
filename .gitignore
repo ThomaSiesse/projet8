@@ -1,0 +1,17 @@
+.qodo/
+
+*.xlsx
+
+*.ipynb
+
+script.py
+
+*.env
+.env*
+
+__pycache__/
+*.pyc
+*.pyo
+
+.DS_Store
+Thumbs.dbdbt-env/
