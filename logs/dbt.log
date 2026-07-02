@@ -1,0 +1,123 @@
+[0m11:09:56.541743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a42f056a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a41aebd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a41aeb750>]}
+
+
+============================== 11:09:56.561571 | 989b0017-871c-4c78-b0f4-83c3d088efc2 ==============================
+[0m11:09:56.561571 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m11:09:56.563516 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'use_experimental_parser': 'False', 'log_path': 'logs', 'empty': 'None', 'invocation_command': 'dbt init meteo_projet8', 'profiles_dir': '/home/camille_sc/.dbt', 'debug': 'False', 'static_parser': 'True', 'log_format': 'default', 'write_json': 'True', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'maximum_seed_size_mib': '1', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m11:09:56.587464 [info ] [MainThread]: Creating dbt configuration folder at /home/camille_sc/.dbt
+[0m11:09:56.590784 [debug] [MainThread]: Starter project path: /home/camille_sc/Bureau/Formation/Projet_8/dbt-env/lib/python3.13/site-packages/dbt/include/starter_project
+[0m11:09:56.594910 [info ] [MainThread]: Setting up your profile.
+[0m11:13:57.680669 [info ] [MainThread]: Profile meteo_projet8 written to /home/camille_sc/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m11:13:57.682172 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m11:13:57.682853 [info ] [MainThread]: dbt version: 1.12.0-b3
+[0m11:13:57.683260 [info ] [MainThread]: python version: 3.13.9
+[0m11:13:57.683611 [info ] [MainThread]: python path: /home/camille_sc/Bureau/Formation/Projet_8/dbt-env/bin/python3
+[0m11:13:57.683953 [info ] [MainThread]: os info: Linux-5.15.0-139-generic-x86_64-with-glibc2.31
+[0m11:13:57.701385 [info ] [MainThread]: Using profiles dir at /home/camille_sc/.dbt
+[0m11:13:57.701704 [info ] [MainThread]: Using profiles.yml file at /home/camille_sc/.dbt/profiles.yml
+[0m11:13:57.701900 [info ] [MainThread]: Using dbt_project.yml file at /home/camille_sc/Bureau/Formation/Projet_8/meteo_projet8/dbt_project.yml
+[0m11:13:57.702194 [info ] [MainThread]: adapter type: postgres
+[0m11:13:57.702358 [info ] [MainThread]: adapter version: 1.10.2
+[0m11:13:57.781275 [info ] [MainThread]: Configuration:
+[0m11:13:57.781655 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:13:57.781875 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:13:57.782069 [info ] [MainThread]: Required dependencies:
+[0m11:13:57.782296 [debug] [MainThread]: Executing "git --help"
+[0m11:13:57.783784 [debug] [MainThread]: STDOUT: "b"usage : git [--version] [--help] [-C <chemin>] [-c <nom>=<valeur>]\n           [--exec-path[=<chemin>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<chemin>] [--work-tree=<chemin>] [--namespace=<nom>]\n           <commande> [<args>]\n\nCi-dessous les commandes Git habituelles dans diverses situations\xc2\xa0:\n\nd\xc3\xa9marrer une zone de travail (voir aussi\xc2\xa0: git help tutorial)\n   clone             Cloner un d\xc3\xa9p\xc3\xb4t dans un nouveau r\xc3\xa9pertoire\n   init              Cr\xc3\xa9er un d\xc3\xa9p\xc3\xb4t Git vide ou r\xc3\xa9initialiser un existant\n\ntravailler sur la modification actuelle (voir aussi\xc2\xa0: git help revisions)\n   add               Ajouter le contenu de fichiers dans l'index\n   mv                D\xc3\xa9placer ou renommer un fichier, un r\xc3\xa9pertoire, ou un lien symbolique\n   restore           Restaurer les fichiers l'arbre de travail\n   rm                Supprimer des fichiers de la copie de travail et de l'index\n   sparse-checkout   Initialiser et modifier l'extraction clairsem\xc3\xa9e\n\nexaminer l'historique et l'\xc3\xa9tat (voir aussi\xc2\xa0: git help revisions)\n   bisect            Trouver par recherche binaire la modification qui a introduit un bogue\n   diff              Afficher les changements entre les validations, entre validation et copie de travail, etc\n   grep              Afficher les lignes correspondant \xc3\xa0 un motif\n   log               Afficher l'historique des validations\n   show              Afficher diff\xc3\xa9rents types d'objets\n   status            Afficher l'\xc3\xa9tat de la copie de travail\n\nagrandir, marquer et modifier votre historique\n   branch            Lister, cr\xc3\xa9er ou supprimer des branches\n   commit            Enregistrer les modifications dans le d\xc3\xa9p\xc3\xb4t\n   merge             Fusionner deux ou plusieurs historiques de d\xc3\xa9veloppement ensemble\n   rebase            R\xc3\xa9application des commits sur le sommet de l'autre base\n   reset             R\xc3\xa9initialiser la HEAD courante \xc3\xa0 l'\xc3\xa9tat sp\xc3\xa9cifi\xc3\xa9\n   switch            Basculer de branche\n   tag               Cr\xc3\xa9er, lister, supprimer ou v\xc3\xa9rifier un objet d'\xc3\xa9tiquette sign\xc3\xa9 avec GPG\n\ncollaborer (voir aussi\xc2\xa0: git help workflows)\n   fetch             T\xc3\xa9l\xc3\xa9charger les objets et r\xc3\xa9f\xc3\xa9rences depuis un autre d\xc3\xa9p\xc3\xb4t\n   pull              Rapatrier et int\xc3\xa9grer un autre d\xc3\xa9p\xc3\xb4t ou une branche locale\n   push              Mettre \xc3\xa0 jour les r\xc3\xa9f\xc3\xa9rences distantes ainsi que les objets associ\xc3\xa9s\n\n'git help -a' et 'git help -g' listent les sous-commandes disponibles et\nquelques concepts. Voir 'git help <commande>' ou 'git help <concept>'\npour en lire plus \xc3\xa0 propos d'une commande sp\xc3\xa9cifique ou d'un concept.\nVoir 'git help git' pour un survol du syst\xc3\xa8me.\n""
+[0m11:13:57.784209 [debug] [MainThread]: STDERR: "b''"
+[0m11:13:57.784447 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:13:57.784770 [info ] [MainThread]: Connection:
+[0m11:13:57.785086 [info ] [MainThread]:   host: Thomas
+[0m11:13:57.785395 [info ] [MainThread]:   port: 5434
+[0m11:13:57.785685 [info ] [MainThread]:   user: thomas
+[0m11:13:57.785973 [info ] [MainThread]:   database: projet8
+[0m11:13:57.786240 [info ] [MainThread]:   schema: public
+[0m11:13:57.786479 [info ] [MainThread]:   connect_timeout: 10
+[0m11:13:57.786666 [info ] [MainThread]:   role: None
+[0m11:13:57.786873 [info ] [MainThread]:   search_path: None
+[0m11:13:57.787059 [info ] [MainThread]:   keepalives_idle: 0
+[0m11:13:57.787240 [info ] [MainThread]:   sslmode: None
+[0m11:13:57.787413 [info ] [MainThread]:   sslcert: None
+[0m11:13:57.787591 [info ] [MainThread]:   sslkey: None
+[0m11:13:57.787765 [info ] [MainThread]:   sslrootcert: None
+[0m11:13:57.787963 [info ] [MainThread]:   application_name: dbt
+[0m11:13:57.788138 [info ] [MainThread]:   retries: 1
+[0m11:13:57.788455 [info ] [MainThread]: Registered adapter: postgres=1.10.2
+[0m11:13:57.824012 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m11:13:57.836570 [debug] [MainThread]: Using postgres connection "debug"
+[0m11:13:57.836902 [debug] [MainThread]: On debug: select 1 as id
+[0m11:13:57.837116 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:13:57.863891 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+could not translate host name "Thomas" to address: Temporary failure in name resolution
+
+[0m11:13:58.004098 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m11:13:58.004550 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m11:13:58.004898 [debug] [MainThread]: On debug: No close available on handle
+[0m11:13:58.005254 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m11:13:58.005599 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:13:58.005928 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  could not translate host name "Thomas" to address: Temporary failure in name resolution
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m11:13:58.006315 [info ] [MainThread]: Your new dbt project "meteo_projet8" was created!
+Initialized new project in /home/camille_sc/Bureau/Formation/Projet_8/meteo_projet8/meteo_projet8
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:13:58.006678 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m11:13:58.007804 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 241.68773, "process_in_blocks": "632", "process_kernel_time": 0.171592, "process_mem_max_rss": "124680", "process_out_blocks": "96", "process_user_time": 2.705581}
+[0m11:13:58.008400 [debug] [MainThread]: Command `dbt init` succeeded at 11:13:58.008307 after 241.69 seconds
+[0m11:13:58.008649 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:13:58.008881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a3f7888a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a41b9a7b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a3fb93ce0>]}
+[0m11:13:58.009139 [debug] [MainThread]: Flushing usage events
+[0m11:13:59.022927 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:14:03.654682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28783716a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2876f57ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2876f57750>]}
+
+
+============================== 11:14:03.658183 | 05ba6804-d0c5-4d98-9f84-73388a9299f0 ==============================
+[0m11:14:03.658183 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m11:14:03.658784 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'introspect': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt init meteo_projet8', 'printer_width': '80', 'indirect_selection': 'eager', 'empty': 'None', 'maximum_seed_size_mib': '1', 'static_parser': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'profiles_dir': '/home/camille_sc/.dbt', 'no_print': 'None', 'debug': 'False', 'log_path': 'logs', 'log_format': 'default', 'version_check': 'True'}
+[0m11:14:03.667588 [info ] [MainThread]: A project called meteo_projet8 already exists here.
+[0m11:14:03.668590 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.10267527, "process_in_blocks": "448", "process_kernel_time": 0.035848, "process_mem_max_rss": "112224", "process_out_blocks": "16", "process_user_time": 1.374183}
+[0m11:14:03.669127 [debug] [MainThread]: Command `dbt init` succeeded at 11:14:03.669017 after 0.10 seconds
+[0m11:14:03.669531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2876f6e650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28770067b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2876f8b130>]}
+[0m11:14:03.669979 [debug] [MainThread]: Flushing usage events
+[0m11:14:04.352907 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:04:09.143426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f765bfa56a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f765ab3bed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f765ab3b750>]}
+
+
+============================== 13:04:09.150168 | 9a256afa-6aaa-4681-b598-0091601aedd6 ==============================
+[0m13:04:09.150168 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m13:04:09.151554 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'target_path': 'None', 'use_colors': 'True', 'log_path': 'logs', 'quiet': 'False', 'log_format': 'default', 'profiles_dir': '/home/camille_sc/.dbt', 'cache_selected_only': 'False', 'warn_error': 'None', 'invocation_command': 'dbt deps', 'printer_width': '80', 'debug': 'False', 'version_check': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'maximum_seed_size_mib': '1', 'static_parser': 'True', 'no_print': 'None', 'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'introspect': 'True'}
+[0m13:04:09.153399 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/camille_sc/Bureau/Formation/Projet_8/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:04:09.155360 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.19060498, "process_in_blocks": "0", "process_kernel_time": 0.079891, "process_mem_max_rss": "111860", "process_out_blocks": "8", "process_user_time": 1.446039}
+[0m13:04:09.156459 [debug] [MainThread]: Command `dbt deps` failed at 13:04:09.156237 after 0.19 seconds
+[0m13:04:09.157399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f765ab52520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f765adeeb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f765ab6ee00>]}
+[0m13:04:09.158239 [debug] [MainThread]: Flushing usage events
+[0m13:04:09.968607 [debug] [MainThread]: An error was encountered while trying to flush usage events

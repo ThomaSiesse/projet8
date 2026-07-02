@@ -29,3 +29,11 @@ Finir les cours
     - connection airbyte - google sheet
     - connection des deux derniers fichier data
     - finir étapes 1 du projet
+
+## 01/07/2026
+### Tâches
+    - push dossier projet_8 sur git hub + data qui était au format .xlsx mis au format csv.
+    - importation des données restante, donnee_meteo_2 et donnee_meteo_3 via lien URL sur github grace à l'onglet raw
+    - synchronisation des 3 sources à postgreSQL
+    - problème de synchronisation de donnee_meteo_1 passage du mode Full refresh | Overwrite + Deduped au mode Full refresh | Overwrite
+    - **MAJ** Il faut extraire chaque partie de chaque fichier via un notebook au format CSV puis faire une route par fichier sur airbyte
