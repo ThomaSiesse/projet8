@@ -1,29 +1,188 @@
 
 version: 2
 
-models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        data_tests:
-          - unique
-          - not_null
-
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        data_tests:
-          - unique
-          - not_null
-version: 2
-
 sources:
   - name: public
     tables:
-      - name: donnee_meteo_1
-      - name: donnee_meteo_2
-      - name: donnee_meteo_3
+      - name: hourly
+        columns:
+          - name: _airbyte_raw_id
+            data_type: character varying
+          - name: _airbyte_extracted_at
+            data_type: timestamp with time zone
+          - name: _airbyte_meta
+            data_type: jsonb
+          - name: _airbyte_generation_id
+            data_type: bigint
+          - name: dh_utc
+            data_type: character varying
+          - name: humidite
+            data_type: numeric
+          - name: pluie_1h
+            data_type: numeric
+          - name: pluie_3h
+            data_type: numeric
+          - name: pression
+            data_type: numeric
+          - name: temps_omm
+            data_type: numeric
+          - name: id_station
+            data_type: character varying
+          - name: nebulosite
+            data_type: numeric
+          - name: vent_moyen
+            data_type: numeric
+          - name: visibilite
+            data_type: numeric
+          - name: temperature
+            data_type: numeric
+          - name: neige_au_sol
+            data_type: numeric
+          - name: vent_rafales
+            data_type: numeric
+          - name: point_de_rosee
+            data_type: numeric
+          - name: vent_direction
+            data_type: numeric
+
+      - name: ichtegem
+        columns:
+          - name: _airbyte_raw_id
+            data_type: character varying
+          - name: _airbyte_extracted_at
+            data_type: timestamp with time zone
+          - name: _airbyte_meta
+            data_type: jsonb
+          - name: _airbyte_generation_id
+            data_type: bigint
+          - name: uv
+            data_type: numeric
+          - name: gust
+            data_type: character varying
+          - name: time
+            data_type: character varying
+          - name: wind
+            data_type: character varying
+          - name: date
+            data_type: character varying
+          - name: solar
+            data_type: character varying
+          - name: speed
+            data_type: character varying
+          - name: humidity
+            data_type: character varying
+          - name: pressure
+            data_type: character varying
+          - name: dew_point
+            data_type: character varying
+          - name: temperature
+            data_type: character varying
+          - name: precip__rate_
+            data_type: character varying
+          - name: precip__accum_
+            data_type: character varying
+
+      - name: la_madeleine
+        columns:
+          - name: _airbyte_raw_id
+            data_type: character varying
+          - name: _airbyte_extracted_at
+            data_type: timestamp with time zone
+          - name: _airbyte_meta
+            data_type: jsonb
+          - name: _airbyte_generation_id
+            data_type: bigint
+          - name: uv
+            data_type: numeric
+          - name: gust
+            data_type: character varying
+          - name: time
+            data_type: character varying
+          - name: wind
+            data_type: character varying
+          - name: date
+            data_type: character varying
+          - name: solar
+            data_type: character varying
+          - name: speed
+            data_type: character varying
+          - name: humidity
+            data_type: character varying
+          - name: pressure
+            data_type: character varying
+          - name: dew_point
+            data_type: character varying
+          - name: temperature
+            data_type: character varying
+          - name: precip__rate_
+            data_type: character varying
+          - name: precip__accum_
+            data_type: character varying
+
+      - name: staions
+        columns:
+          - name: _airbyte_raw_id
+            data_type: character varying
+          - name: _airbyte_extracted_at
+            data_type: timestamp with time zone
+          - name: _airbyte_meta
+            data_type: jsonb
+          - name: _airbyte_generation_id
+            data_type: bigint
+          - name: id
+            data_type: character varying
+          - name: name
+            data_type: character varying
+          - name: type
+            data_type: character varying
+          - name: latitude
+            data_type: numeric
+          - name: elevation
+            data_type: numeric
+          - name: longitude
+            data_type: numeric
+          - name: license_url
+            data_type: character varying
+          - name: license_source
+            data_type: character varying
+          - name: license_license
+            data_type: character varying
+          - name: license_metadonnees
+            data_type: character varying
+
+      - name: metadata
+        columns:
+          - name: _airbyte_raw_id
+            data_type: character varying
+          - name: _airbyte_extracted_at
+            data_type: timestamp with time zone
+          - name: _airbyte_meta
+            data_type: jsonb
+          - name: _airbyte_generation_id
+            data_type: bigint
+          - name: humidite
+            data_type: character varying
+          - name: pluie_1h
+            data_type: character varying
+          - name: pluie_3h
+            data_type: character varying
+          - name: pression
+            data_type: character varying
+          - name: temps_omm
+            data_type: character varying
+          - name: nebulosite
+            data_type: character varying
+          - name: vent_moyen
+            data_type: character varying
+          - name: visibilite
+            data_type: character varying
+          - name: temperature
+            data_type: character varying
+          - name: neige_au_sol
+            data_type: character varying
+          - name: vent_rafales
+            data_type: character varying
+          - name: point_de_rosee
+            data_type: character varying
+          - name: vent_direction
+            data_type: character varying
